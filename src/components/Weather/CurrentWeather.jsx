@@ -14,10 +14,9 @@ function CurrentWeather({
     ...props
 }) {
     const { lang, units } = useContext(LangContext);
-    
 
     return (
-        <div className="bg-gray-100 w-fit mx-auto my-2 px-10 py-2 rounded-lg space-y-4">
+        <div className="bg-gray-100 w-fit mx-auto my-2 px-2 sm:px-10 py-2 rounded-lg space-y-4">
             <div className="flex flex-row items-center justify-between">
                 <h3 className="text-2xl font-bold">
                     {cityLabel || lang.currentWeather.placeholder}
@@ -28,8 +27,8 @@ function CurrentWeather({
                 </figure>
             </div>
             {temp && (
-                <div className="flex items-center justify-between border-t-2 border-gray-800">
-                    <h2 className="text-4xl font-bold">
+                <div className="flex items-center justify-evenly border-t-2 border-gray-800 w-full">
+                    <h2 className="text-4xl font-bold text-center">
                         {temp + " " + units.temp}
                     </h2>
                     <ul className="flex flex-col items-end content-center w-fit text-sm  mt-4 border-l-[1px] border-gray-500 pl-2">

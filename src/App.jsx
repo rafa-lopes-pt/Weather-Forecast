@@ -89,7 +89,7 @@ function App() {
             </nav>
 
             {/*================================= SEARCH BAR */}
-            <label className="text-gray-200 text-3xl font-bold my-2 mt-10">
+            <label className="text-gray-200 text-3xl font-bold my-2 mt-10 text-center">
                 {lang.searchbar.label}
             </label>
             <Select
