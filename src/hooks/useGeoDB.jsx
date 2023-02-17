@@ -35,16 +35,17 @@ const useGeoDB = (lang = "") => {
             cityData.countryCode,
         ];
         const label = labelArr.join(", ");
-        console.log("label", label);
+        // console.log("label", label);
         return label;
     };
 
     const getCities = async (search = "", lang = defaultLang) => {
+        console.log("City lang", lang);
         //params ? key=val&key=val
         let requestParams = "?";
         if (typeof search === "string") {
             requestParams +=
-                "minPopulation=10000&landguageCod=" +
+                "minPopulation=10000&languageCode=" +
                 lang +
                 "&namePrefix=" +
                 search;

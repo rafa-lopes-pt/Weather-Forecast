@@ -85,7 +85,7 @@ export const LangContextProvider = (props) => {
     const pt = "pt";
 
     //Current Lang State
-    const [lang, setLangObj] = useState(enLangObj);
+    const [lang, setLangObj] = useState({ current: pt, ...ptLangObj });
 
     /**
      * Changes the context's current language.
@@ -98,7 +98,7 @@ export const LangContextProvider = (props) => {
                     setLangObj({ current: pt, ...ptLangObj });
                 }
                 break;
-            case pt:
+            case en:
                 {
                     setLangObj({ current: en, ...enLangObj });
                 }

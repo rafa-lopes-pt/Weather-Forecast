@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import "./App.css";
 import "./css/tailwind.css";
 import Select from "./components/Select";
 import CurrentWeather from "./components/Weather/CurrentWeather";
@@ -49,6 +48,8 @@ function App() {
 
     useEffect(() => {
         city && onFetchHandler(city);
+
+        console.log(lang.current);
     }, [lang]);
 
     return (
@@ -98,7 +99,7 @@ function App() {
                 noMatch={lang.searchbar.noMatch}
                 loadingText={lang.searchbar.loadingText}
                 className={"w-full md:w-3/4"}
-                fetchData={getCities}
+                fetchData={(param) => getCities(param, lang.current)}
                 onChange={onSelectLocationHandler}
             ></Select>
 
