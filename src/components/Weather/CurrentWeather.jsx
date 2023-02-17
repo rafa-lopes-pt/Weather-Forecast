@@ -29,7 +29,7 @@ function CurrentWeather({
             </div>
             {temp && (
                 <div className="flex items-center justify-between border-t-2 border-gray-800">
-                    <h2 className="text-5xl font-bold">
+                    <h2 className="text-4xl font-bold">
                         {temp + " " + units.temp}
                     </h2>
                     <ul className="flex flex-col items-end content-center w-fit text-sm  mt-4 border-l-[1px] border-gray-500 pl-2">
