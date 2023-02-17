@@ -48,8 +48,6 @@ function App() {
 
     useEffect(() => {
         city && onFetchHandler(city);
-
-        console.log(lang.current);
     }, [lang]);
 
     return (

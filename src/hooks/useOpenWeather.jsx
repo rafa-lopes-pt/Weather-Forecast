@@ -80,7 +80,7 @@ const useOpenWeather = (lang = "en", units = "metric") => {
             let data = await baseFetch("forecast", params);
             //parse data
 
-            console.log("Forecast Raw", data);
+            // console.log("Forecast Raw", data);
 
             const date = data.list.map((el) => {
                 //parsing data
@@ -116,7 +116,17 @@ const useOpenWeather = (lang = "en", units = "metric") => {
             //Index 16 = 3rd Day( index (0+1)*8*2  <- +1 due to counting error )
             //...
             //5th day will be calculated with index 39 ( last index )
-            return [date[8], date[16], date[24], date[32], date[39]];
+            const forecastData = [
+                date[8],
+                date[16],
+                date[24],
+                date[32],
+                date[39],
+            ];
+
+            console.table(forecastData);
+
+            return forecastData;
         } else
             throw new Error(
                 "All parameters of getForecast() should be of type string"

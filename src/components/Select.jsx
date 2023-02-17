@@ -43,7 +43,7 @@ function Select({
     const [value, setValue] = useState("");
 
     const onChangeHandler = (params) => {
-        console.log("onChange", params);
+        // console.log("onChange", params);
         setValue(params);
         onChange(params);
     };

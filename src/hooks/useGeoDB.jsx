@@ -40,7 +40,6 @@ const useGeoDB = (lang = "") => {
     };
 
     const getCities = async (search = "", lang = defaultLang) => {
-        console.log("City lang", lang);
         //params ? key=val&key=val
         let requestParams = "?";
         if (typeof search === "string") {

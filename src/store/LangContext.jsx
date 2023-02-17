@@ -42,13 +42,13 @@ const ptLangObj = {
         noMatch: "Sem Resultados",
     },
     weekdays: [
-        "Sábado",
         "Domingo",
         "Segunda",
         "Terça",
         "Quarta",
         "Quinta",
         "Sexta",
+        "Sábado",
     ],
 };
 const enLangObj = {
@@ -69,13 +69,13 @@ const enLangObj = {
         noMatch: "No Results",
     },
     weekdays: [
-        "Saturday",
         "Sunday",
         "Monday",
         "Tuesday",
         "Wednesday",
         "Thursday",
         "Friday",
+        "Saturday",
     ],
 };
 
