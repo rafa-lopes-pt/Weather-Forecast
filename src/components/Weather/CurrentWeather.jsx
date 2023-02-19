@@ -14,7 +14,6 @@ function CurrentWeather({
     ...props
 }) {
     const { lang, units } = useContext(LangContext);
-console.log("API KEY",process.env.GEODB_API_KEY);
     return (
         <div className="bg-gray-100 w-fit mx-auto my-2 px-2 sm:px-10 py-2 rounded-lg space-y-4">
             <div className="flex flex-row items-center justify-between">
@@ -52,6 +51,7 @@ console.log("API KEY",process.env.GEODB_API_KEY);
                             {lang.weather.pressure}:{" "}
                             {pressure + " " + units.pressure}
                         </li>
+                        <li>GEO DB API KEY {process.env.GEODB_API_KEY}</li>
                     </ul>
                 </div>
             )}
