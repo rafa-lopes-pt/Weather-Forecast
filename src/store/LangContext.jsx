@@ -24,7 +24,11 @@ const imperialUnitObj = {
     humidity: "%",
 };
 
+const en = "en";
+const pt = "pt";
+
 const ptLangObj = {
+    current: pt,
     currentWeather: {
         placeholder: "- Selecione uma Localização -",
     },
@@ -52,6 +56,7 @@ const ptLangObj = {
     ],
 };
 const enLangObj = {
+    current: en,
     weather: {
         feels_like: "Feels Like",
         temp_min: "Minimum",
@@ -81,11 +86,9 @@ const enLangObj = {
 
 export const LangContextProvider = (props) => {
     //Lang Constants - Identifiers
-    const en = "en";
-    const pt = "pt";
 
     //Current Lang State
-    const [lang, setLangObj] = useState({ current: pt, ...ptLangObj });
+    const [lang, setLangObj] = useState(ptLangObj);
 
     /**
      * Changes the context's current language.
@@ -95,12 +98,12 @@ export const LangContextProvider = (props) => {
         switch (lang_code) {
             case pt:
                 {
-                    setLangObj({ current: pt, ...ptLangObj });
+                    setLangObj(ptLangObj);
                 }
                 break;
             case en:
                 {
-                    setLangObj({ current: en, ...enLangObj });
+                    setLangObj(enLangObj);
                 }
                 break;
             default:
