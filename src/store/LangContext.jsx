@@ -97,14 +97,12 @@ export const LangContextProvider = (props) => {
     const setLang = (lang_code) => {
         switch (lang_code) {
             case pt:
-                {
-                    setLangObj(ptLangObj);
-                }
+                setLangObj(ptLangObj);
+
                 break;
             case en:
-                {
-                    setLangObj(enLangObj);
-                }
+                setLangObj(enLangObj);
+
                 break;
             default:
                 setLangObj(enLangObj);
@@ -124,14 +122,12 @@ export const LangContextProvider = (props) => {
     const setUnits = (units_code) => {
         switch (units_code) {
             case metric:
-                {
-                    setUnitsObj(metricUnitObj);
-                }
+                setUnitsObj(metricUnitObj);
+
                 break;
             case imperial:
-                {
-                    setUnitsObj(imperialUnitObj);
-                }
+                setUnitsObj(imperialUnitObj);
+
                 break;
             default:
                 setLangObj(metricUnitObj);
