@@ -10,7 +10,7 @@ const useGeoDB = (lang = "") => {
         method: "GET",
         headers: {
             "X-RapidAPI-Key":
-                "e315d61bd5mshfdb9cd3a7c561cap1923d7jsn3e078153b6ca",
+                process.env.REACT_APP_GEODB_API_KEY,
             "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
         },
     };

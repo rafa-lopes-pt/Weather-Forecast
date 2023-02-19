@@ -51,7 +51,6 @@ function CurrentWeather({
                             {lang.weather.pressure}:{" "}
                             {pressure + " " + units.pressure}
                         </li>
-                        <li>GEO DB API KEY {process.env.REACT_APP_GEODB_API_KEY}</li>
                     </ul>
                 </div>
             )}

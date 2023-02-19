@@ -57,7 +57,7 @@ function App() {
                 <h1 className="text-3xl font-bold my-3">
                     {" "}
                     Weather Forecast -{" "}
-                    <i class="fa-brands fa-free-code-camp"></i> FCC Project
+                    <i className="fa-brands fa-free-code-camp"></i> FCC Project
                 </h1>
 
                 <span className="space-x-3">
@@ -65,16 +65,16 @@ function App() {
                         href="https://www.youtube.com/watch?v=Reny0cTTv24"
                         target="_blank"
                     >
-                        <i class="fa-brands fa-youtube"></i> Original Project
+                        <i className="fa-brands fa-youtube"></i> Original Project
                     </a>
                     <a href="https://github.com/rafa-lopes-pt" target="_blank">
-                        <i class="fa-brands fa-github"></i> Github
+                        <i className="fa-brands fa-github"></i> Github
                     </a>
                     <a
                         href="https://www.linkedin.com/in/rafa-lopes-098146234/"
                         target="_blank"
                     >
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        <i className="fa-brands fa-linkedin"></i> LinkedIn
                     </a>{" "}
                     <Toggle
                         optionL={"EN"}

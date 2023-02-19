@@ -6,7 +6,7 @@ const useOpenWeather = (lang = "en", units = "metric") => {
     const [defaultLang, setDefaultLang] = useState(lang);
     const [defaultUnits, setDefaultUnits] = useState(units);
     //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
-    const API_KEY = "appid=636980c358a5a9618ae8298cd2172b76";
+    const API_KEY = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
     const baseURL = `https://api.openweathermap.org/data/2.5/`;
 
     const baseFetch = async (endpoint, params = "") => {
